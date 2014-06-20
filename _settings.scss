@@ -1,0 +1,91 @@
+//
+// Basetype Functions
+//
+
+// This is where you get to personalize..
+// Set your *own typeface settings in order to pass the _functions partial
+
+@import url("http://fonts.googleapis.com/css?family=Merriweather");
+
+$font-merriweather: (
+  typeface: 'Merriweather, serif',
+
+  x-small: (
+    font-size: 12,
+    line-height: 16
+  ),
+
+  small: (
+    font-size: 15,
+    line-height: 18
+  ),
+
+  base: (
+    font-size: 18,
+    line-height: 22
+  ),
+
+  mid: (
+    font-size: 21,
+    line-height: 28
+  ),
+
+  mid-large: (
+    font-size: 26,
+    line-height: 32
+  ),
+
+  large: (
+    font-size: 36,
+    line-height: 42
+  ),
+
+  x-large: (
+    font-size: 64,
+    line-height: 73
+  )
+);
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+
+$font-opensans: (
+    typeface: "Open Sans, sans-serif",
+
+    x-small: (
+    font-size: 12,
+    line-height: 16
+  ),
+
+  small: (
+    font-size: 15,
+    line-height: 18
+  ),
+
+  base: (
+    font-size: 18,
+    line-height: 22
+  ),
+
+  mid: (
+    font-size: 21,
+    line-height: 28
+  ),
+
+  mid-large: (
+    font-size: 26,
+    line-height: 32
+  ),
+
+  large: (
+    font-size: 36,
+    line-height: 42
+  ),
+
+  x-large: (
+    font-size: 64,
+    line-height: 73
+  )
+);
+
+// This is your fallback typeface variable
+$font-default: $font-merriweather;
