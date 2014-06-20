@@ -1,6 +1,6 @@
 # Sass Type
 
-An eloquently modular typographic scale tool.
+> A glob of functions for typographic rhythm.
 
 ## Components
 
