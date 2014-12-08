@@ -12,5 +12,5 @@ $ bower install aglobof-sass.type
 Include the partial in your sass
 
 ```scss
-@import "bower_components/aglobof-sass.type/type";
+@import "bower_components/aglobof-sass.type/glob";
 ```
