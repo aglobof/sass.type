@@ -1,34 +1,48 @@
-# Sass Type
+# sass.type
 
-> A glob of functions for typographic rhythm.
+> A glob of functions and mixins for typographic rhythm.
 
-## Components
+## Usage
 
-#### _settings.scss
-> Using Sass `$maps`, this is where you put your typeface settings you are using for your project. Think of it as your `_data` directory in [Jekyll](http://jekyllrb.com/docs/datafiles/). It won't ever appear in your production code, it's there for data reference for when you pass in your functions/mixins.
-
-#### _functions.scss
-> Functions/mixins that contain the magic from [The Ultimate Package](https://github.com/ultimate-package/tools.font-scale).
-
-## Example
+Store your type settings inside a variable and create a fall-back `$font-default`
 
 ```scss
+$font-helvetica: (
+  font-family: 'Helvetica, sans-serif',
 
-// Your project's Sass
+  base: (
+    font-size: 18,
+    line-height: 22
+  ),
 
-@import "settings";
-@import "functions";
+  large: (
+    font-size: 36,
+    line-height: 42
+  ),
+);
 
+$font-default: $font-helvetica;
+```
+
+Then, with all that data stored we can finally use the mixins:
+
+```scss
 h1 {
-  font-family: font-family($font-opensans);
+  font-family: font-family($font-helvetica);
   @include font-scale(large);
 }
+```
 
-// CSS output
+The output will look like this in CSS:
 
+```css
 h1 {
   font-family: Open Sans, sans-serif;
   font-size: 36px;
   line-height: 42px;
 }
 ```
+
+## Acknowledgements
+
+- [Setting typographic scale with Sass maps](http://erskinedesign.com/blog/setting-typographic-scale-with-sass-maps/)
