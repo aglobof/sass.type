@@ -36,8 +36,6 @@ h1 {
 The output will look like this in CSS:
 
 ```css
-// CSS output
-
 h1 {
   font-family: Open Sans, sans-serif;
   font-size: 36px;
