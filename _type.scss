@@ -1,7 +1,6 @@
 // Glob - Type Functions & Mixins
 // ================================
 
-// Tweaked functions from https://github.com/ultimate-package/tools.font-scale
 @function font-feature($feature, $family:$font-default, $set: 'base'){
     $result: map-get(map-get($family, $set), $feature);
     @return ($result * 1px);
@@ -27,23 +26,3 @@
         font-family: font-family($family);
     }
 }
-
-// Store your type settings inside a 'fonts' variables
-// --------------------------------------------------
-
-$font-helvetica: (
-  font-family: 'Helvetica, sans-serif',
-
-  base: (
-    font-size: 18,
-    line-height: 22
-  ),
-
-  large: (
-    font-size: 36,
-    line-height: 42
-  ),
-);
-
-// Make sure to create a fallback typeface variable
-$font-default: $font-helvetica;
